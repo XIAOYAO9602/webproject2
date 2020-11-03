@@ -13,7 +13,7 @@ const schema = yup.object({
 });
 
 function UpdatePlace(props) {
-	// find the place Id from the URL by using useParams
+	// useLocation to grab the current URL
 	const identifiedPlace = useLocation().state;
 
 	if (!identifiedPlace) {
@@ -24,7 +24,6 @@ function UpdatePlace(props) {
 		);
 	}
 
-
 	const handleSubmit = async (values) => {
 		// This function received the values from the form
 		// The line below extract the two fields from the values object.
@@ -33,8 +32,10 @@ function UpdatePlace(props) {
 			...identifiedPlace,
 			title: title,
 			description: description,
-		}
+		};
 		console.log(body);
+		// put the options to backend DB by url using fetch()
+		// The PUT method replaces all current representations of the target resource with the request payload.
 		const options = {
 			method: "PUT",
 			headers: {
@@ -46,7 +47,6 @@ function UpdatePlace(props) {
 		const url = `http://localhost:3001/api/places/${identifiedPlace.id}`;
 		try {
 			await fetch(url, options);
-			
 		} catch (error) {
 			console.error(error);
 		}
