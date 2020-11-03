@@ -50,4 +50,6 @@ Instruction to build:
 
 5.Type: npm start
 
+*you have to cd both backend and frontend file do step 4 and 5
+
 6.Open your browser and type http://localhost:3001/ to URl :clap:
