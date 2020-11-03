@@ -22,20 +22,20 @@ Used database: MongoDB
 The blog app consists of three parts, all users, my places and add places
 
 Here is the navigation bar:
-![image](https://github.com/XIAOYAO9602/webproject2new/blob/main/picture/navbar.png)
+![image](https://github.com/XIAOYAO9602/WebProject2/blob/main/picture/navbar.png)
 
 All users displays all users of the blog app if you click the user, then it connects to My Places which shows all pcitures and information posted by the user.
-![image](https://github.com/XIAOYAO9602/webproject2new/blob/main/picture/user1.png)
+![image](https://github.com/XIAOYAO9602/WebProject2/blob/main/picture/user1.png)
 
 My places displays all pictures/contents posted by the user.
-![image](https://github.com/XIAOYAO9602/webproject2new/blob/main/picture/infoofplace.png)
+![image](https://github.com/XIAOYAO9602/WebProject2/blob/main/picture/infoofplace.png)
 
 Here's the page of uploading your content.
-![image](https://github.com/XIAOYAO9602/webproject2new/blob/main/picture/addplace.png)
+![image](https://github.com/XIAOYAO9602/WebProject2/blob/main/picture/addplace.png)
 
 
 And you can also edit your post.
-![image](https://github.com/XIAOYAO9602/webproject2new/blob/main/picture/editplace.png)
+![image](https://github.com/XIAOYAO9602/WebProject2/blob/main/picture/editplace.png)
 ----------------------------------------------------------------------
 
 Instruction to build:
