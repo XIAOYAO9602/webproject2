@@ -14,6 +14,8 @@ const schema = yup.object({
 // It's often beneficial (especially in React) to handle form validation via a library like Formik,
 // isValid and isInvalid props can be added to form controls to manually apply validation styles.
 function Login() {
+	// The useHistory hook gives you access to the history instance that you may use to navigate.
+	// its like a link object but dont need a visual component on screen
 	let history = useHistory();
 	const handleSubmit = async (values) => {
 		// This function received the values from the form
@@ -36,6 +38,10 @@ function Login() {
 		try {
 			const response = await fetch(url, options);
 			const user = await response.json();
+			// if we found the user based on the password/email values, then we set the user id to be in local storage
+			// and make the page go back to home page (but log in)
+			// Local Storage is a Web API native to modern web browsers.
+			// It allows websites/apps to store data (simple and limited) in the browser, making that data available in future browser sessions.
 			if (user) {
 				localStorage.setItem("_id", user._id);
 				history.push("/");

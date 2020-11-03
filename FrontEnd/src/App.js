@@ -13,6 +13,11 @@ import UserPlaces from "./places/pages/UserPlaces";
 import UpdatePlace from "./places/pages/UpdatePlace.js";
 import Login from "./user/pages/Login";
 
+// path = "/""  list of Users, will always be avaiable
+// path = "/userId/places" always available
+// path = "/places/new" new place form, only avaiable after log in
+// path="/places/:placeId" only avaiable after log in
+// path="/auth" log in place, only avaiable when we are not log in
 function App() {
   return (
     <Router>
@@ -32,7 +37,8 @@ function App() {
             <NewPlace />
           </Route>
           <Route path="/places/:placeId">
-            <UpdatePlace />
+            {/*update user form, can view on map, delete or edit*/}
+            <UpdatePlace />}
           </Route>
           <Route path="/auth">
             <Login />

@@ -16,10 +16,9 @@ const schema = yup.object({
 // It's often beneficial (especially in React) to handle form validation via a library like Formik,
 // isValid and isInvalid props can be added to form controls to manually apply validation styles.
 function NewPlace() {
-
 	const handleSubmit = async (values) => {
-		const userId = localStorage.getItem('_id')
-		console.log(userId)
+		const userId = localStorage.getItem("_id");
+		console.log(userId);
 		// This function received the values from the form
 		// The line below extract the two fields from the values object.
 		const { title, description, address, location, url } = values;
@@ -29,10 +28,11 @@ function NewPlace() {
 			address,
 			location,
 			url,
-			_id: userId
-
+			_id: userId,
 		};
 		console.log(body);
+		// post to the backend DB
+		// The POST method is used to submit an entity to the specified resource, often causing a change in state or side effects on the server.
 		const options = {
 			method: "POST",
 			headers: {
@@ -43,10 +43,9 @@ function NewPlace() {
 		};
 		const serverUrl = `http://localhost:3001/api/places/`;
 		try {
-		 await fetch(serverUrl, options);
-
+			await fetch(serverUrl, options);
 		} catch (error) {
-			console.log('error here?', error);
+			console.log("error here?", error);
 		}
 	};
 
