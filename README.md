@@ -1,22 +1,32 @@
-#lifestyle blog add
+# lifestyle blog add
 
-Porject 1 for CS5610 Web Development at Northeastern University
+Project 1 for CS5610 Web Development at Northeastern University
 
-Author: Yao Xiao & ZhaoZhao Chong
+## Author:
 
-URL to class: https://johnguerra.co/classes/webDevelopment_fall_2020/
+Yao Xiao & ZhaoZhao Chong
 
-Objective: Building a liftstule blag ago where users and upload and share their favourite places. They can recommend such as hiking sopts, coffee shop, bakeries, outdoor dining place, etc. Uploader are expected to upload the title, actual location, comment, and picture(url).  :rainbow:
+## URL to class:
+https://johnguerra.co/classes/webDevelopment_fall_2020/
 
-Used technologies: sublime text, eslint and js prettier
 
-Used programming language: Java Script and JSX
+## Objective: 
+Build a liftstyle blog where users upload and share their favourite places. They can make recommendations such as hiking spots, coffee shop, bakeries, outdoor dining place, etc. Uploaders are expected to upload a title, location, comment, and picture(url).  :rainbow:
 
-Used running environment: Node.js 
+##Used technologies: 
+sublime text, eslint and js prettier
 
-Used programming framework: Express
+##Used programming language:
+Java Script and JSX
 
-Used database: MongoDB
+##Used running environment: 
+Node.js 
+
+##Used programming framework: 
+Express
+
+##Used database: 
+MongoDB
 
 
 The blog app consists of three parts, all users, my places and add places
@@ -38,7 +48,7 @@ And you can also edit your post.
 ![image](https://github.com/XIAOYAO9602/WebProject2/blob/main/picture/editplace.png)
 ----------------------------------------------------------------------
 
-Instruction to build:
+## Instruction to build:
 
 1.Open terminal on Mac or CMD on windows
 
@@ -46,10 +56,10 @@ Instruction to build:
 
 3.Type: git clone https://github.com/XIAOYAO9602/webproject2.git
 
-4.Type: npm install
+4.For both the Frontend and Backend files navigate into the directories from the terminal (cd) and do steps 6 and 7
 
-5.Type: npm start
+5.Type: npm install
 
-*you have to cd both backend and frontend file do step 4 and 5
+6.Type: npm start
 
-6.Open your browser and type http://localhost:3001/ to URl :clap:
+7.Open your browser and type http://localhost:3001/ to URl :clap:
