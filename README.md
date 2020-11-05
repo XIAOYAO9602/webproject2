@@ -52,4 +52,4 @@ Instruction to build:
 
 *you have to cd both backend and frontend file do step 4 and 5
 
-6.Open your browser and type http://localhost:3001/ to URl :clap:
+6.Open your browser and type http://localhost:3000/ to URl :clap:
