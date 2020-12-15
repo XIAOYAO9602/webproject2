@@ -40,16 +40,21 @@ And you can also edit your post.
 
 Instruction to build:
 
-1.Open terminal on Mac or CMD on windows
+1. Build a file on your pc
 
-2.cd to the file where you wanna clone the project
+2. cd the file and do git clone the repository
 
-3.Type: git clone https://github.com/XIAOYAO9602/webproject2.git
+3. Open two terminals on your pc
 
-4.Type: npm install
+4. both terminals cd the file of the project
 
-5.Type: npm start
+5. do npm install for the first terminal
 
-*you have to cd both backend and frontend file do step 4 and 5
+6. cd "front" file and do npm install and do yarn build
 
-6.Open your browser and type http://localhost:3000/ to URl :clap:
+7. after done npm install for both terminal, first terminal do npm start and second one do yarn start
+
+8. The webiste will be poped up automatically in your browser otherwise navigate to: http://localhost3000 in your browser :clap:
+
+
+
